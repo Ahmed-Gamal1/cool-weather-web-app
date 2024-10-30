@@ -7,7 +7,7 @@ document.getElementById('submit').addEventListener('click', function() {
 
 function fetchWeather(location) {
     const apiKey = '095cc8d8c28e4de4967200558241306';
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
